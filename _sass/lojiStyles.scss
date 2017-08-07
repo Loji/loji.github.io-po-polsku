@@ -4,7 +4,6 @@
 $body-bg: #252525;
 
 body {
-  padding:0px 0 20px 0px;
   margin: 0px;
   font:14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#d4d4d4;
@@ -78,7 +77,7 @@ strong {
 
 .wrapper {
   max-width: 800px;
-  margin:0 auto;
+  margin: 2em auto;
   position:relative;
   padding: 2em;
   box-shadow: 0 0 6px 0 darken($body-bg, 2%);
@@ -228,8 +227,7 @@ dt {
 }
 
 section {
-  padding: 2em 0 8em 0;
-  margin: 20px 0;
+  padding: 0 0 2em 0;
 
   #title {
     border: 0;
