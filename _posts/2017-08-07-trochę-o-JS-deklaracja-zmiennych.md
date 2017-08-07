@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Trochę o JS - deklaracja zmiennych"
+title:  "Deklaracja zmiennych w JS"
 date:   2017-08-07 20:08:59 +0200
-categories: JS programowanie trochę-o-js
+categories: trochę-o-js
 ---
 Witaj w moim nowym cyklu o JavaScript. Zamierzam nauczyć Cię tutaj różnic między JS’em a innymi językami z rodziny C, tak żebyś mógł korzystać z jego potęgi i mógł świadomie unikać pułapek, jakie w nim się mogą kryć. 
 
