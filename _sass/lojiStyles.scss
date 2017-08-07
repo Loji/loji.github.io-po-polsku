@@ -1,14 +1,15 @@
 @import "normalize";
 @import "fonts";
-@import "rouge-base16-dark.scss";
+
+$body-bg: #252525;
 
 body {
   padding:0px 0 20px 0px;
   margin: 0px;
   font:14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#f0e7d5;
+  color:#d4d4d4;
   font-weight: normal;
-  background: #252525;
+  background: $body-bg;
   background-attachment: fixed !important;
   background: linear_gradient(#2a2a29, #1c1c1c);
 }
@@ -76,10 +77,12 @@ strong {
 }
 
 .wrapper {
-  max-width:650px;
+  max-width: 800px;
   margin:0 auto;
   position:relative;
-  padding: 0 20px;
+  padding: 2em;
+  box-shadow: 0 0 6px 0 darken($body-bg, 2%);
+  background: darken($body-bg, 2%);
 }
 
 section img {
@@ -104,9 +107,9 @@ code {
 
 pre {
   padding:8px 15px;
-  background: #191919;
+  background: #282c34;
   border-radius: 2px;
-  border:1px solid #121212;
+  border:1px solid darken(#282c34, 15%);
   box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
   overflow: auto;
   overflow-y: hidden;
@@ -225,10 +228,8 @@ dt {
 }
 
 section {
-  max-width:650px;
-  padding: 30px 0px 50px 0px;
+  padding: 2em 0 8em 0;
   margin: 20px 0;
-  margin-top: 70px;
 
   #title {
     border: 0;
