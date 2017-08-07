@@ -31,11 +31,11 @@ Błędny
 const a = 1; 
 switch(a) {
     case 1: 
-		let b = 1; 
-		break; 
+        let b = 1; 
+        break; 
     case 2:
-		let b = 3; 
-		break; 
+        let b = 3; 
+        break; 
 }
 ```
 Poprawny
@@ -43,30 +43,30 @@ Poprawny
 const a = 1; 
 switch(a) {
     case 1: {
-		let b = 1; 
-		break; 
+        let b = 1; 
+        break; 
     }
     case 2: {
-		let b = 3; 
-		break; 
+        let b = 3; 
+        break; 
      }
 }
 ```
 Błędny 
 ```
 function test() { 
-	let a = 1;
-	let a = 1; 
-	console.log(a);
+    let a = 1;
+    let a = 1; 
+    console.log(a);
 }
 test();
 ```
 Poprawny
 ```
 function test() { 
-	let a = 1;
-	{ let a = 1; }  
-	console.log(a);
+    let a = 1;
+    { let a = 1; }  
+    console.log(a);
 }
 test();
 ```
