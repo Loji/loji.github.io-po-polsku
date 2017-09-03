@@ -5,8 +5,8 @@ $body-bg: #252525;
 
 body {
   margin: 0px;
-  font:14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#d4d4d4;
+  font: 16px/1.6 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#dadada;
   font-weight: normal;
   background: $body-bg;
   background-attachment: fixed !important;
@@ -104,6 +104,14 @@ code {
   border-radius: 2px;
 }
 
+.block-image {
+  background: #282c34;
+  border:1px solid darken(#282c34, 15%);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.3);
+  padding: 5px;
+  text-align: center;
+}
+
 pre {
   padding:8px 15px;
   background: #282c34;
@@ -119,6 +127,12 @@ pre {
     margin: 0;
     padding: 0;
   }
+}
+
+code.highlighter-rouge {
+  background: #282c34;
+  border-radius: 2px;
+  border:1px solid darken(#282c34, 15%);
 }
 
 table {
