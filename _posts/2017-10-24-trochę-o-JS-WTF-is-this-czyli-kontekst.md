@@ -5,8 +5,6 @@ date:   2017-10-29 20:08:59 +0200
 categories: trochę-o-js
 ---
 
-## WTF is this?
-
 This w języku JavaScript nie zachowuje się domyślnie tak jak ma to miejsce w innych językach. Co to znaczy? Głównie to, że może zmieniać się w zależności od tego gdzie wykonasz swoją metodę lub funkcję stworzoną przez słowo kluczowe `function`. 
 
 Jako przykład: 
