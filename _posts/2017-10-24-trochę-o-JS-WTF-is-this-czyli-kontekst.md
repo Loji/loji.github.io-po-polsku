@@ -45,15 +45,16 @@ JavaScript posiada parę wbudowanych metod, które zmienią tablicę tak, by pos
 Możliwe że najpopularniejszą spotykaną metodą dla zmiany kontekstu jest `bind`. Jest on wywoływany na referencji do funkcji i zwraca nową, z kontekstem dla this który sami podamy w argumencie.
 
 ``` 
-class Sparta {
+class City {
     // ...this is just a mock
 }
+const sparta = new City();
 
 function iHaveNoThis() {
     console.log(this, 'is madness!');
 }
 
-const wellIHaveThis = iHaveNoThis.bind(Sparta);
+const wellIHaveThis = iHaveNoThis.bind(sparta);
 ```
 
 Wykonując powyższy kod sprawiamy że funkcja `iHaveNoThis` z kontekstem `sparta` będzie dostępna pod referencją `wellIHaveThis`. 
