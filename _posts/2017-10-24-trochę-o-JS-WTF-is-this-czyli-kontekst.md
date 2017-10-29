@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "WTF is this?! Czyli o kontekście"
-date:   2017-10-29 20:08:59 +0200
+date:   2017-10-29 20:20:59 +0200
 categories: trochę-o-js
 ---
 
