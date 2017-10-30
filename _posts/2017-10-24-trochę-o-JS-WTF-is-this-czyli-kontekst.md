@@ -63,21 +63,21 @@ Wykonując powyższy kod sprawiamy że funkcja `iHaveNoThis` z kontekstem `spart
 
 `call` oraz `apply` działają podobnie do `bind`, również zmieniają kontekst na ten podany w argumencie, ale za to wywołują od razu funkcję. `apply` jako drugi argument przyjmuje tablicę z argumentami dla funkcji, natomiast `call` przyjmuje n+1 argumentów dla funkcji n-argumentowej (pierwszym argumentem jest nowy `this`).
 
-```func.call(newThis, [1, 2, 'test'])``` 
+```func.apply(newThis, [1, 2, 'test'])``` 
 będzie równoznaczny dla kodu
 ```
 const newFunc = func.bind(newThis);
 newFunc(1, 2, 'test');
 ```
 
-Analogicznie dla powyższego można zastosować `apply` w sposób `func.apply(newThis, 1, 2, 'test')`.
+Analogicznie dla powyższego można zastosować `call` w sposób `func.call(newThis, 1, 2, 'test')`.
 
 ### call oraz apply jako "przechwytywanie funkcji"
 
 Częściej znajdziesz w kodzie użycie `call` oraz `apply` na przykład w:
 
 ```
-const mappedArrayLike = Array.prototype.map.apply(arrayLikeObject, mapFunction)
+const mappedArrayLike = Array.prototype.map.call(arrayLikeObject, mapFunction)
 ```
 
 Powyższy kod wykonuje `mapFunction` na każdym elemencie `arrayLikeObject` który przypomina `Array` ale jest innym, zwykłym obiektem który nie posiada swojej funkcji `map`. Taki kod najczęściej spotkasz w bibliotekach i wypełnieniach (polyfillach).
